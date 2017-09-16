@@ -1,8 +1,12 @@
+<!DOCTYPE>
 <html>
+  <head> 
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
 
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/examples/vendor/aframe/build/aframe.min.js"></script>
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script> 
-<body style='margin : 0px; overflow: hidden;'>    
+      <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script> 
+  </head> 
+  
+ <body style='margin : 0px; overflow: hidden;'>    
   <div style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>  
   <a href="https://github.com/jeromeetienne/AR.js/" target="_blank">Microsoft Garage </a> - Reality Room app <a href='https://twitter.com/jerome_etienne' target='_blank'>@msftgarage</a>
   </div>
@@ -21,7 +25,6 @@
       <a-image src='1.png'></a-image>  
     </a-marker>  
     
-    
     <a-marker preset='hiro'>      
       <a-text value="This is Microsoft Hololens!"></a-text>  
       <a-image src="#my-image"></a-image>   
@@ -36,8 +39,7 @@
       <a-box position='0 0.5 0' material='color: blue;'></a-box>  
     </a-marker>  
     
-    <a-camera-static/>   
-  
+    <a-camera-static/>  
   </a-scene>
 </body>
 
