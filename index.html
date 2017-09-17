@@ -19,6 +19,84 @@
     
        <a-image src="https://img.quizlet.com/dKmKE-o.jpg"></a-image> 
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1
+<!DOCTYPE>
+
+
+
+2
+<html>
+
+
+
+3
+  <head> 
+
+
+
+4
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+
+
+
+5
+    <script src="js/aframe-ar.js"></script>
+
+
+
+6
+    <script>THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'</script>
+
+
+
+7
+  </head> 
+
+
+
+8
+  
+
+
+
+9
+ <body style='margin : 0px; overflow: hidden;'>    
+
+
+
+10
+  <div style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>  
+
+
+
+11
+  <a href="https://www.microsoft.com/garage" target="_blank">Microsoft Garage </a> - Reality Room app <a href='https://twitter.com/msftgarage' target='_blank'>@msftgarage</a>
+
+
+
+12
+  </div>
+
     
     
     
@@ -45,18 +123,48 @@
       <a-box position='0 0.5 0' material='color: red;'></a-box>
     </a-marker> 
     
-    
-    <a-marker type="pattern" url="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/data/multimarkers/multi-abcdef/patt.c" >        </a-marker>       </a-marker> 
+   
+     <!-- A marker -->
+   <a-marker type="pattern" url="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/data/multimarkers/multi-abcdef/patt.a" size="1">         
+     <a-box position="0 0 0" scale="1.5 1.5 1.5" color="black"></a-box>
+   </a-marker>
+   
+   <!-- B marker -->
+   <a-marker type="pattern" url="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/data/multimarkers/multi-abcdef/patt.b" size="1">       
+     <!-- YOUR CODE HERE -->   
+           <a-text value="This is Microsoft Hololens!" rotation='-90 0 0' color="blue"></a-text> 
+   </a-marker>    
+   
+   <!-- C marker --> 
+   <a-marker type="pattern" url="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/data/multimarkers/multi-abcdef/patt.c" size="1">         
+     <!-- YOUR CODE HERE -->
+           <a-text value="This is Microsoft Hololens!" rotation='-90 0 0' color="blue"></a-text> 
+   </a-marker> 
+   
+   <!-- D marker -->
+   <a-marker type="pattern" url="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/data/multimarkers/multi-abcdef/patt.d" size="1">        
+     <!-- YOUR CODE HERE -->   
+           <a-text value="This is Microsoft Hololens!" rotation='-90 0 0' color="blue"></a-text> 
+   </a-marker>   
+   
+   <!-- F marker -->    
+   <a-marker type="pattern" url="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/data/multimarkers/multi-abcdef/patt.f" size="1">
+      <a-text value="This is Microsoft Hololens!" rotation='-90 0 0' color="blue"></a-text> 
+     <!-- YOUR CODE HERE -->  
+   </a-marker>      
+   
+   
+   <!-- G marker -->
+   <a-marker type="pattern" url="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/data/multimarkers/multi-abcdef/patt.g" size="1">    
+   <!-- YOUR CODE HERE -->
+           <a-text value="This is Microsoft Hololens!" rotation='-90 0 0' color="blue"></a-text> 
+   </a-marker>
    
    
     <!-- handle barcode marker -->  
     <a-marker type='barcode' value='5'>  
       <a-box position='0 0.5 0' material='color: blue;'></a-box>
     </a-marker>    
-    
-    <a-camera-static/>    </a-scene>
-    
-    
 </body>
 
 </html>
