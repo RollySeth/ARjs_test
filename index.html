@@ -17,7 +17,7 @@
       <img id="my-image" src="//images/hololensreturn.png">  
     </a-assets>     
     
-       <a-image src="https://github.com/RollySeth/ARjs_test/blob/master/images/hololensreturn.png"></a-image> 
+       <a-image src="https://img.quizlet.com/dKmKE-o.jpg"></a-image> 
     
     
     
@@ -37,7 +37,7 @@
     
     <a-marker preset='hiro'>         
       <a-text value="This is Microsoft Hololens!" rotation='-90 0 0' color="blue"></a-text> 
-      <a-image src="/images/hololensreturn.png" alt="hi" class="inline" width="100"></a-image>         
+<a-image src="#my-image" position='0 0.5 0' rotation='-90 0 0'> </a-image>        
     </a-marker>    
     
     
@@ -45,6 +45,10 @@
       <a-box position='0 0.5 0' material='color: red;'></a-box>
     </a-marker> 
     
+    
+    <a-marker type="pattern" url="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/data/multimarkers/multi-abcdef/patt.c" >        </a-marker>       </a-marker> 
+   
+   
     <!-- handle barcode marker -->  
     <a-marker type='barcode' value='5'>  
       <a-box position='0 0.5 0' material='color: blue;'></a-box>
